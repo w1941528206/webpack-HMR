@@ -1,0 +1,27 @@
+{
+  "name": "2021-webpack-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack serve",
+    "start": "node startDevServer.js",
+    "debug": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^4.5.0",
+    "mime": "^2.4.7",
+    "raw-loader": "^4.0.2",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1"
+  },
+  "dependencies": {
+    "socket.io": "^3.0.4"
+  }
+}
