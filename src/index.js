@@ -1,10 +1,10 @@
 function render(){
-    let message = require('./message.js')
-    root.innerHTML = message
+    let title = require('./title.js')
+    root.innerHTML = title
 }
 
 render()
 
-if(module.hot){
-    module.hot.accept(['./message.js'],render)
+if(module.hot){ //只有热更新才有
+    module.hot.accept(['./title.js'],render)
 }
