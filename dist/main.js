@@ -8,15 +8,25 @@
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 function render(){
-    let title = __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module './title.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()))
+    let title = __webpack_require__(/*! ./title.js */ "./src/title.js")
     root.innerHTML = title
 }
 
 render()
 
 if(true){ //只有热更新才有
-    module.hot.accept([Object(function webpackMissingModule() { var e = new Error("Cannot find module './title.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())],render)
+    module.hot.accept([/*! ./title.js */ "./src/title.js"],render)
 }
+
+/***/ }),
+
+/***/ "./src/title.js":
+/*!**********************!*\
+  !*** ./src/title.js ***!
+  \**********************/
+/***/ ((module) => {
+
+module.exports = 'message01'
 
 /***/ }),
 
@@ -140,7 +150,7 @@ module.exports = new EventEmitter()
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => "54bcdc25d28a55e03b58"
+/******/ 		__webpack_require__.h = () => "69fdcc8c7d94b64e5cf0"
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
